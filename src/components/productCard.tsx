@@ -1,7 +1,19 @@
 import Image from "next/image";
 
 // components/ProductCard.js
-const ProductCard = ({ imageSrc, title, description, price, crossPrice }) => {
+const ProductCard = ({
+  imageSrc,
+  title,
+  description,
+  price,
+  crossPrice,
+}: {
+  imageSrc: string;
+  title: string;
+  description: string;
+  price: string;
+  crossPrice: string;
+}) => {
   return (
     <div className="w-[285px] overflow-hidden mt-4 bg-[#F4F5F7]">
       {/* Image Section */}

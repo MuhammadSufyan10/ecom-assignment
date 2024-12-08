@@ -9,11 +9,7 @@ export default function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", { name, email, subject, message });
-  };
+ 
 
   return (
     <div className="flex flex-col items-center justify-center w-full">
@@ -43,7 +39,7 @@ export default function Contact() {
             <p>Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00</p>
           </div>{" "}
         </div>
-        <form onSubmit={handleSubmit} className="space-y-6 w-full">
+        <form className="space-y-6 w-full">
           <div className="block">
             <p>Name</p>
             <input
@@ -84,7 +80,6 @@ export default function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className=" p-4 border border-gray-300 rounded   w-full mt-2"
-              rows="4"
               required
             />
           </div>

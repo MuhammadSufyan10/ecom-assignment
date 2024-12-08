@@ -3,7 +3,7 @@ import Image from "next/image";
 import bg from "../../public/images/bg.png";
 import logo from "../../public/images/logo.png";
 
-const BreadCrumb = ({ title }) => {
+const BreadCrumb = ({ title }: { title: string }) => {
   return (
     <div className="w-full">
       <Image src={bg} className="w-full bg-contain " alt="bg" />
